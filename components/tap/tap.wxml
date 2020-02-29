@@ -1,0 +1,8 @@
+<view class="tabs">
+  <!-- tabs -->
+  <block wx:for="{{ tabs }}" wx:key="id">
+    <view bind:tap="clickTab" data-id='{{item.id}}' class="tabs-item {{ item.isActive ? 'active' : ''}}">
+      {{ item.title }}
+    </view>
+  </block>
+</view>

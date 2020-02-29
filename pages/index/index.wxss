@@ -1,0 +1,64 @@
+swiper {
+  width: 750rpx;
+  height: 340rpx;
+}
+swiper image {
+  width: 750rpx;
+  height: 340rpx;
+}
+.menus {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-around;
+  padding: 24rpx 0 29rpx 0;
+}
+.menus-item {
+  text-align: center;
+}
+.menus-item image {
+  width: 128rpx;
+  height: 128rpx;
+}
+.floor-title {
+  background-color: #fff;
+  padding-top: 30rpx;
+}
+.floor-title image {
+  width: 750rpx;
+  height: 59rpx;
+}
+.floor-body {
+  display: flex;
+  padding: 20rpx 10rpx;
+}
+.floor-body-l {
+  margin-right: 10rpx;
+}
+.floor-body-l image {
+  width: 232rpx ;
+  height: 386rpx;
+}
+.floor-body-r image {
+  width: 232rpx;
+  height: 188rpx;
+}
+.floor-body-r image:nth-child(2n+1) {
+  margin-right: 10rpx;
+}
+.floor-body-r image:nth-child(-n+2) {
+  margin-bottom: 10rpx;
+}
+.top {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+  position: fixed;
+  bottom: 20rpx;
+  right: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

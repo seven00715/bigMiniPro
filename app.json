@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/02-css3vw/css3vw",
+    "pages/01-iconfont/iconfont",
+    "pages/category/category",
+    "pages/car/car",
+    "pages/user/user",
+    "pages/goods_list/goods_list",
+    "pages/collect/collect",
+    "pages/order/order",
+    "pages/search/search",
+    "pages/goods_detail/goods_detail",
+    "pages/feedback/feedback",
+    "pages/login/login",
+    "pages/auth/auth",
+    "pages/pay/pay"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff2d4a",
+    "navigationBarTitleText": "商城",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color":"#999",
+    "selectedColor": "#ff2d4a",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "./assets/tab/home.png",
+      "selectedIconPath": "./assets/tab/home(1).png"
+    },
+    {
+      "pagePath": "pages/category/category",
+      "text": "分类",
+      "iconPath": "./assets/tab/fenlei.png",
+      "selectedIconPath": "./assets/tab/fenlei_1.png"
+    },
+     {
+       "pagePath": "pages/car/car",
+       "text": "购物车",
+       "iconPath": "./assets/tab/car.png",
+       "selectedIconPath": "./assets/tab/car_1.png"
+     },
+     {
+      "pagePath": "pages/user/user",
+      "text": "个人中心",
+      "iconPath": "./assets/tab/user.png",
+      "selectedIconPath": "./assets/tab/user_1.png"
+    }
+
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

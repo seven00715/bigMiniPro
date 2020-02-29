@@ -1,0 +1,17 @@
+.tabs {
+  height: 80rpx;
+  background: #f8f6f6;
+  display: flex;
+}
+.tabs-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 8rpx solid #f8f6f6;
+}
+.tabs .active {
+  border-bottom: 8rpx solid var(--themColor);
+  font-size: 700;
+  color: var(--themColor);
+}

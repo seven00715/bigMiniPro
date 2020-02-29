@@ -1,0 +1,89 @@
+swiper {
+  width: 750rpx;
+  height: 446rpx;
+}
+swiper image {
+  width: 750rpx;
+  height: 446rpx;
+}
+.price {
+  padding: 0 20rpx;
+  color: var(--themColor);
+  font-size: 38rpx;
+}
+.goods-name {
+  display: flex;
+  border-bottom: 4rpx solid #ccc;
+  border-top: 4rpx solid #ccc;
+  padding: 10rpx 0;
+  justify-content: center;
+  align-items: center;
+}
+.goods-name-l {
+  padding: 0 10rpx;
+  flex: 6;
+  border-right: 2rpx solid #eee;
+  font-size: 26rpx;
+}
+.goods-name-r {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.goods-name-r icon {
+  font-size: 36rpx;
+}
+.goods-name-r text {
+  font-size: 26rpx;
+}
+.desc-title {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  font-size: 36rpx;
+  color: var(--themColor);
+  font-weight: 700;
+}
+.desc {
+  padding-bottom: 100rpx;
+}
+.tool {
+  height: 100rpx;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  border-top: 1rpx solid #eee;
+  font-size: 32rpx;
+}
+.tool .tool1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+.tool .tool2 {
+  flex: 1.5;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #fff;
+}
+.tool .tool3 {
+  flex: 1.5;
+  background-color: var(--themColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #fff;
+}

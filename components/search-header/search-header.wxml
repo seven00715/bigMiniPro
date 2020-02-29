@@ -1,0 +1,9 @@
+<!-- 这里写搜索组件 -->
+
+<view class="search">
+  <view class="search-bar">
+    <!-- <icon type='search'></icon> -->
+    <text class="iconfont icon-sousuo" ></text>
+    <text>搜索</text>
+  </view>
+</view>

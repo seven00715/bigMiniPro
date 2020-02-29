@@ -1,0 +1,34 @@
+<search-header></search-header>
+<!-- 分类部分 -->
+<view class="cates">
+  <scroll-view class="cates-l" scroll-y="{{true}}">
+    <block wx:for="{{ categoriesData }}" wx:key="cat_id">
+      <view bindtap="clickItem" data-activeId='{{ index }}' class="{{ activeId === index? 'active' : '' }}">
+        {{ item.cat_name }}
+      </view>
+    </block>
+  </scroll-view>
+  <scroll-view class="cates-r" scroll-y="{{true}}">
+    <view class="cates-r-banner">
+      <image mode="widthFix" src="https://gtms02.alicdn.com/tps/i2/TB1ZeJGIXXXXXcnXXXXDgwcQVXX-375-130.jpg"></image>
+    </view>
+    <!-- 右侧内容标题 -->
+    <block wx:for="{{categoriesData[activeId].children}}" wx:key="index">
+      <view class="cates-r-title">
+        <text class="line" decode="{{true}}">/&emsp;</text>
+        <text>{{ item.cat_name }}</text>
+        <text class="line" decode="{{true}}">&emsp;/</text>
+      </view>
+      <!-- 九宫格 -->
+      <view class="cates-r-content">
+        <block wx:for="{{item.children}}" wx:key="index" wx:for-item='it' wx:for-index='i'>
+            <navigator class="cates-r-content-item" url="/pages/goods_list/goods_list?id={{it.cat_id}}&name={{ it.cat_name }}"  open-type="navigate">
+              <image src="{{it.cat_icon}}"></image>
+              <text>{{ it.cat_name }}</text>
+            </navigator>
+        </block>
+      </view>
+    </block>
+  </scroll-view>
+</view>
+

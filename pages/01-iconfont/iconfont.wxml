@@ -1,0 +1,15 @@
+<!--  演示 在线图标的使用
+- 阿里图标库(登录)
+单击图标加购物车
+购物车里 添加到项目(第一次需要新建项目)
+来到项目 Font class + 查看在线链接
+新家窗口,打链接复制链接里的代码
+新建一个文件夹  icon.wxss.把代码粘贴进去
+
+全局app.wxss 里引入
+@import './utils/icon.wxss';
+在页面使用
+ <text class=".iconfont  .icon-sousuo"></text>
+ -->
+
+ <text class=".iconfont  .icon-sousuo"></text>

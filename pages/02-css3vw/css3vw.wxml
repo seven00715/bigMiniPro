@@ -1,0 +1,18 @@
+<!-- 
+vw/vh v代表viewpoint 视口 width宽度 height高度
+vw/vh 都是参考视口(可视区),不参考父元素
+1vh === 1%
+
+wmin 选 wh 和 vw中最小的那一个
+vmax 选 wh 和 vw中 最大的那一个
+
+第二个:calc 
+1.calc 运算
+2. height: calc(100px + 100px); + 两边一定要有空格
+
+第三个:全局变量
+ -->
+ <view class="v1"></view>
+ <view class="v2"></view>
+ <view class="v3"></view>
+

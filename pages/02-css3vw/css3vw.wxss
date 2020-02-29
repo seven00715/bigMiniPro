@@ -1,0 +1,54 @@
+/* pages/02-css3vw/css3vw.wxss */
+/* page{
+  height: 100%;
+} */
+/* 
+vw/vh 都是参考**视口**(可视区),不参考父元素
+1vh === 1%
+ */
+.v1{
+  /*  height: 50vh; 占了视口高度的50%  */
+  /*  width: 50vw; 占了视口宽度的50%  */
+  /* height: 50vh;
+  width: 50vw;
+  background-color: red; */
+
+  /* 
+  wmin 选 wh 和 vw中最小的那一个
+   */
+
+   /* height: 50vmin; vw 和 vh 中 vw比较小 选 vw 50vmin  高度就是vw的一半 */
+   /* background-color: green; */
+
+   /* vmax 选 wh 和 vw中 最大的那一个 */
+   /* height: 50vmax; */
+    /* vw 和 vh 中 vh比较da 选 vh 50vmin  高度就是vh的一半 */
+   /* background-color: green; */
+
+
+   /* --------属性可运算----------- */
+   /* height: calc(100px + 100px);  */
+   /* + 两边一定要有空格!!!! */
+   /* background-color: red; */
+
+   /* 需求:盒子的高度永远比视口小50px */
+
+   /* height:calc(100vh - 50px);
+   background-color: red;  */
+
+   height: 200px;
+   /* 读取变量(主题颜色)   在app.wxss里定义 */
+   background-color: var(--themColor);
+
+   
+}
+.v2{
+  width: 100px;
+  height: 100px;
+  background-color: var(--themColor);
+}
+.v3{
+  width: 500px;
+  height: 50px;
+  background-color: var(--themColor);
+}

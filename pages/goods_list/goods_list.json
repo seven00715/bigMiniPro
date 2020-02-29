@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "search-header": "../../components/search-header/search-header",
+    "tab":"../../components/tap/tap",
+    "goods-item":"../../components/goods-item/goods-item"
+  },
+  "navigationBarTitleText":"商品列表",
+  "onReachBottomDistance": 50,
+  "enablePullDownRefresh":true
+}

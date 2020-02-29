@@ -1,0 +1,39 @@
+/* 组价有独立的作用域 需要字体图标 需要自己引用 */
+@font-face {
+  font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_1652022_xo76m2d6jjq.eot?t=1582594108143');
+  /* IE9 */
+  src: url('//at.alicdn.com/t/font_1652022_xo76m2d6jjq.eot?t=1582594108143#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMsAAsAAAAABwAAAALgAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqBYIFmATYCJAMMCwgABCAFhG0HPRszBiMRJmuvRfbPhEzuhXlSyS83cLAjCM2JYM1PL6xb6o5mNJ4Jnq/9fufu7ttvToOk2s08EbomqJTE0MUqhKJNNJJ3YJ1NanRlhhPkUOEnN7cHVBXSIX8SysF2hBpczlk1yOSEeTVZkrUjjz7wgdI3eLf/OWa6fL43jP42m0tWYCTgBAfUjXlHdgdyQH7L8NrFeBC3IUCQHKWk+dE9DAEDXiSAbLu1BQg5PwajpfwItmanQY7x8KtDdQ8chb8vP1TnB4WnwSv7V1uWMb6fffh0x3WYFggE81kBbR9ooBQYkNna+DhoRMNrgnJMe67FIKi5Qs5ByHeVdqf/eArEgovDABSCVnFTAsaCwIePBwRAK22cbABBcgHUtLGfjoqU10uMwQqt0OucrjLLxf7qeZeBrIbeYSQEhQAgAILB1fBwOjmiAayEg+FwBgAYe2M6lgW7jtIgCsOe+Exw1hvxEUX+W63Vbrzxg/lTEGi2KMO9H9WCDXPz/3+NvkELriS5hlNuMDGv7HHxpPJhFTr66K8vVI9wwNpH91IOvwXRrG58jwnLaurhzTJHzaEzD56rz5UFd6HvdMO//hvexPNVOqb994cMAI+1E23odReGfk4E/jtxCPxZQc8u44qwQRubz/i+U1M20qoAuLoLB3YnvY5XZnoXg+Ank4LCRzZo/OQiDbYUPELUgsVPHQQp0bY/RMoOaMQEgGK7CIS4U1BEuQJN3APSYF/AI8sfWOJpCPL81/nEk0uOXQPyhArEH5ykVVNTYlHpC02eeciKQuoPQ3Qh6Oq2mHriimGONbGYPiUNOtACD3QfzjPBFmhEmWqb0jY0ja77plrSUjFXAeISpADhDzgSWWkxOGGln39BRjbjQktdh/0HBZEbHnRqbQ/kU772qruXR6LC6CWJBrSALMADTUOzGQFb/bQRkpKaHRHdDBrST/eV1+srlw/I05rAa9FN22Hv+Gqi5bW7SDlmqio=') format('woff2'), url('//at.alicdn.com/t/font_1652022_xo76m2d6jjq.woff?t=1582594108143') format('woff'), url('//at.alicdn.com/t/font_1652022_xo76m2d6jjq.ttf?t=1582594108143') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */ url('//at.alicdn.com/t/font_1652022_xo76m2d6jjq.svg?t=1582594108143#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-xiangshang:before {
+  content: "\e6b1";
+}
+.icon-sousuo:before {
+  content: "\e752";
+}
+.search {
+  background-color: var(--themColor);
+  padding: 20rpx 16rpx;
+}
+.search-bar {
+  background: #fff;
+  height: 60rpx;
+  width: 718rpx;
+  border-radius: 8rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-bar text {
+  color: #666;
+  font-size: 30rpx;
+  margin-left: 10rpx;
+}

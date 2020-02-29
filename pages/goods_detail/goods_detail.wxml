@@ -1,0 +1,46 @@
+<swiper indicator-dots="{{ true }}" autoplay="{{ true }}" circular="{{ true }}" interval="5000" duration="1000">
+  <block wx:for="{{detail.pics}}" wx:key="pics_id">
+    <swiper-item>
+      <image mode="aspectFit" src="{{ item.pics_mid_url }}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 价格 -->
+<view class="price">
+  <text>￥</text>
+  <text>{{ detail.goods_price }}</text>
+</view>
+<!-- 产品名称 -->
+<view class="goods-name">
+  <view class="goods-name-l">{{detail.goods_name}}</view>
+  <view class="goods-name-r">
+    <icon class="iconfont icon-wujiaoxing"></icon>
+    <text>收藏</text>
+  </view>
+</view>
+<!-- 图文详情 -->
+<view class="desc-title">图文详情</view>
+<view class="desc">
+  <rich-text class="" nodes="{{ detail.goods_introduce }}"></rich-text>
+</view>
+<!-- 底部工具栏 -->
+<view class="tool">
+  <view class="tool1">
+    <text>^</text>
+    <text>客服</text>
+  </view>
+  <view class="tool1">
+    <text>^</text>
+    <text>分享</text>
+  </view>
+  <navigator class="tool1" target="" url="/pages/car/car"  open-type='switchTab'>
+    <text>^</text>
+    <text>购物车</text>
+  </navigator>
+  <view class="tool2" bind:tap="addCart">
+    <text>加入购物车</text>
+  </view>
+  <view class="tool3">
+    <text>立即购买</text>
+  </view>
+</view>

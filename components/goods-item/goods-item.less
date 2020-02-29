@@ -1,0 +1,46 @@
+.goods{
+  display: flex;
+  height: 240rpx;
+  border-bottom: 1px solid #eee;
+  // background-color: #ccc;
+  &-l {
+    flex: 1;
+    // background: #696;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    image {
+      width: 100%;
+    }
+  }
+  &-r {
+    flex:2;
+    // background: #969;
+    padding: 20rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-top {
+      // background-color: red;
+      word-break: break-all;
+    }
+    &-bottom{
+      // background-color: yellow;
+      text {
+        padding-left: 12rpx;
+      }
+     
+    }
+
+  }
+}
+.price {
+  color: var(--themColor);
+}
+.lin2{
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  
+}

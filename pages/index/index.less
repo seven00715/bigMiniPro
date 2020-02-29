@@ -1,0 +1,82 @@
+//
+swiper {
+  width: 750rpx;
+  height: 340rpx;
+  image{
+    width: 750rpx;
+    height: 340rpx;
+  }
+}
+// 菜单导航
+
+.menus{
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-around;
+  // background-color: blue;
+  padding: 24rpx 0 29rpx 0;
+  &-item{
+    text-align: center;
+    image{
+      width: 128rpx;
+      height: 128rpx;
+      // background-color: pink;
+    
+    }
+  }
+}
+// 楼层
+.floor{
+  &-title{
+    background-color: #fff;
+    padding-top: 30rpx;
+
+    image {
+      width: 750rpx;
+      height: 59rpx;
+    }
+  }
+  &-body{
+    display: flex;
+    padding: 20rpx 10rpx;
+    &-l{
+      margin-right: 10rpx;
+      image {
+        width: 232rpx ;
+        height: 386rpx;
+        
+      }
+    }
+    &-r{
+      
+      image{
+        width: 232rpx;
+        height:188rpx;
+      }
+      image:nth-child(2n+1){
+        margin-right: 10rpx;
+      }
+      image:nth-child(-n+2){
+        margin-bottom: 10rpx;
+      }
+      
+    }
+  }
+}
+// 回到顶部
+.top{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+
+  background-color: rgba(#000, #000, #000, 1);
+  position: fixed;
+
+  bottom: 20rpx;
+  right: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}

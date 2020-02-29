@@ -1,0 +1,36 @@
+.goods {
+  display: flex;
+  height: 240rpx;
+  border-bottom: 1px solid #eee;
+}
+.goods-l {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goods-l image {
+  width: 100%;
+}
+.goods-r {
+  flex: 2;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.goods-r-top {
+  word-break: break-all;
+}
+.goods-r-bottom text {
+  padding-left: 12rpx;
+}
+.price {
+  color: var(--themColor);
+}
+.lin2 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

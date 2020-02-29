@@ -1,0 +1,134 @@
+.address{
+  height: 140rpx;
+  // background-color: pink;
+   
+  .address1{
+    height: 100%;
+    // background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .address2{
+    // background-color: pink;
+    height: 100%;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    padding: 10rpx 20rpx;
+    font-size: 30rpx;
+
+    &-top{
+      margin-top: 10rpx;
+      line-height: 40rpx;
+      width: 100%;
+      display: flex;
+      .block{
+        flex: 1;
+      }
+
+    }
+    &-bottom{
+      margin-top: 20rpx;
+      line-height: 40rpx;
+    }
+
+  }
+}
+.cart-title{
+  height: 80rpx;
+  color: var(--themColor);
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+  font-size: 32rpx;
+  border-top: 1px solid var(--themColor);
+  border-bottom: 1px solid var(--themColor);
+}
+.cart{
+  display: flex;
+  height: 240rpx;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 110rpx;
+  .cart1{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cart2{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    image {
+      width: 90%;
+    }
+  }
+  .cart3{
+    flex: 4;
+    padding: 20rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    &-top{
+      word-break: break-all;
+    }
+    &-bottom{
+      display: flex;
+      justify-content: space-between;
+      .price{
+        color: var(--themColor);
+      }
+      .edit{
+        display: flex;
+        .calc{
+          display: flex;
+          line-height: 20rpx;
+          width: 40rpx;
+          height: 40rpx;
+          border: 1px solid #000;
+          justify-content: center;
+          align-items: center;
+
+        }
+        .num{
+          margin: 0 10rpx;
+          font-size: 30rpx;
+        }
+      }
+    }
+  }
+}
+.cart:last-child{
+  border-bottom: none;
+}
+
+.tool{
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  display: flex;
+  .tool1{
+    flex: 1.8;
+  }
+  .tool2{
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 10rpx;
+  }
+  .tool3{
+    flex: 1;
+    background-color: var(--themColor);
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

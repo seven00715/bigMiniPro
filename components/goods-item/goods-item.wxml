@@ -1,0 +1,18 @@
+<!-- s商品列表组件的结果 -->
+<navigator  url="/pages/goods_detail/goods_detail?goods_id={{goods.goods_id}}" >
+<view class="goods">
+     <view class="goods-l">
+    <image mode="widthFix" src="{{ goods.goods_small_logo || 'http://img1.imgtn.bdimg.com/it/u=3677000854,2980171297&fm=26&gp=0.jpg' }}  "></image>
+  </view>
+  
+ 
+  <view class="goods-r">
+    <view class="goods-r-top line2">{{ goods.goods_name }}</view>  
+    <view class="goods-r-bootom">
+      <text>￥ </text>
+      <text class="price">{{  goods.goods_price }}</text>
+    </view>  
+  </view>
+
+</view>
+</navigator>

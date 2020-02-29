@@ -1,0 +1,20 @@
+
+<search-header></search-header>
+
+<!-- tab -->
+<tab tabs="{{ tabs }}" bind:mytap="toggleTab"></tab>
+
+<!-- 内容部分 -->
+
+<block wx:if="{{ tabs[0].isActive }}">
+<block wx:for="{{goodslist}}" wx:key="goods_id">
+  <goods-item goods='{{ item }}'></goods-item>
+</block>
+  
+</block>
+<block wx:elif="{{ tabs[1].isActive }}">
+  <view>销量部分</view>
+</block>
+<block wx:else>
+  <view>价格部分</view>
+</block>
