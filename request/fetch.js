@@ -3,8 +3,8 @@ function fetch(options){
     const p = new Promise((resolve,reject)=>{
       wx.request({
         url:BASE_URL+ options.url,
-        data:options.data || {},
-        methods :options.methods || 'GET',
+        data :options.data || {},
+        method :options.methods || 'GET',
         header : options.header ||  {},
         success:res=>{
           // console.log(res);

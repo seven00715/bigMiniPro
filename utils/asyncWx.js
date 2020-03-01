@@ -115,3 +115,18 @@ export const xj_showModal = () =>{
     })
   })
 }
+
+/**
+ * wx.login封装
+ */
+
+export const xj_wxlogin = ()=>{
+  return new Promise((resolve,reject) =>{
+    wx.login({
+      timeout:10000,
+      success: resolve,
+      fail:reject
+
+    })
+  })
+}

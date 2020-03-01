@@ -1,2 +1,2 @@
 
-<button type='primary' plain bindtap='startLogin'>获取授权</button>
+<button type='primary' plain bindgetuserinfo='getUserInfo' open-type='getUserInfo'>获取授权</button>
