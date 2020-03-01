@@ -1,1 +1,125 @@
-/* pages/pay/pay.wxss */
+.address {
+  height: 140rpx;
+}
+.address .address1 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.address .address2 {
+  height: 100%;
+  padding: 10rpx 20rpx;
+  font-size: 30rpx;
+}
+.address .address2-top {
+  margin-top: 10rpx;
+  line-height: 40rpx;
+  width: 100%;
+  display: flex;
+}
+.address .address2-top .block {
+  flex: 1;
+}
+.address .address2-bottom {
+  margin-top: 20rpx;
+  line-height: 40rpx;
+}
+.cart-title {
+  height: 80rpx;
+  color: var(--themColor);
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+  font-size: 32rpx;
+  border-top: 1px solid var(--themColor);
+  border-bottom: 1px solid var(--themColor);
+}
+.cart {
+  display: flex;
+  height: 240rpx;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 110rpx;
+}
+.cart .cart1 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart .cart2 {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart .cart2 image {
+  width: 90%;
+}
+.cart .cart3 {
+  flex: 4;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cart .cart3-top {
+  word-break: break-all;
+}
+.cart .cart3-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.cart .cart3-bottom .price {
+  color: var(--themColor);
+}
+.cart .cart3-bottom .edit {
+  display: flex;
+}
+.cart .cart3-bottom .edit .calc {
+  display: flex;
+  line-height: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+  border: 1px solid #ccc;
+  justify-content: center;
+  align-items: center;
+}
+.cart .cart3-bottom .edit .num {
+  margin: 0 10rpx;
+  font-size: 30rpx;
+}
+.cart:last-child {
+  border-bottom: none;
+}
+.tool {
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  display: flex;
+  background-color: #fff;
+}
+.tool .tool1 {
+  flex: 1.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tool .tool2 {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 10rpx;
+}
+.tool .tool3 {
+  flex: 1;
+  background-color: var(--themColor);
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

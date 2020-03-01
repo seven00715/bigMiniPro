@@ -40,7 +40,8 @@ export const  xj_hideLoading =() =>{
     wx.showToast({
       title,
       icon: 'none',
-      duration: 2000
+      duration: 2000,
+      success: resolve
     })
    
    })
@@ -51,14 +52,15 @@ export const  xj_hideLoading =() =>{
   */
 
   export const xj_successToast = title =>{
-    return new Promise (resolve => {
+    // return new Promise (resolve => {
       wx.showToast({
         title,
         icon: 'none',
-        duration: 2000
+        duration: 2000,
+        success:resolve
       })
      
-     })
+    //  })
   }
   /**
    * 获取收货地址
@@ -96,6 +98,20 @@ export const xj_openSetting = () => {
     wx.openSetting({
       success: resolve,
       fail: reject
+    })
+  })
+}
+
+/**
+ * 删除确认框
+ */
+
+export const xj_showModal = () =>{
+  return new Promise ((resolve)=>{
+    wx.showModal({
+      title: '提示',
+      content: '确定删除该商品吗',
+      success:resolve
     })
   })
 }

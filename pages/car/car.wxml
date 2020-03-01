@@ -20,7 +20,7 @@
       <!-- <checkbox-group bindchange='onChangeCheck' data-good='{{ item }}'>
         <checkbox class="" checked="{{ item.checked }}"></checkbox>
       </checkbox-group> -->
-      <switch class="" checked="{{ item.checked }}" type="checkbox" bindchange='onChangeCheck' data-good='{{ item }}'>
+      <switch class="" checked="{{ item.checked }}" type="checkbox" bindchange='onChangeCheck' data-id='{{ item.goods_id }}'>
       </switch>
     </view>
     <view class="cart2">
@@ -44,7 +44,7 @@
     <!-- <checkbox-group bindchange="">
       <checkbox class="" checked="false">全选</checkbox>
     </checkbox-group> -->
-    <switch class="" checked="{{ item.checked }}" type="checkbox" bindchange='onChangeAllCheck'>全选</switch>
+    <switch class="" checked="{{ allcheck }}" type="checkbox" bindchange='onChangeAllCheck'>全选</switch>
   </view>
   <view class="tool2">
     <view>
@@ -53,7 +53,7 @@
     </view>
     <view>包含运费</view>
   </view>
-  <view class="tool3">
+  <view class="tool3" bindtap="jump2pay">
     <view>
       结算
       <text>({{total_goods.num}})</text>
